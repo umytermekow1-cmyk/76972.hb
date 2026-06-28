@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>76972 HARBY BÖLÜMI</title>
+     <style>
+    body {
+        /* Вместо background_image.jpg укажите точное название вашего файла с картинкой */
+        background-image: url('SANLY ULGAM/123456789.png'); 
+        background-size: cover;        /* Растягивает картинку на весь экран */
+        background-position: center;    /* Центрирует изображение */
+        background-repeat: no-repeat;  /* Запрещает размножение картинки плиткой */
+        background-attachment: fixed;   /* Картинка остается неподвижной при скролле */
+        margin: 0;
+    }
+</style>
+   <style>
+
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #3d4144; /* Темный фон как на фото */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+
+        .login-container {
+            text-align: center;
+            width: 100%;
+            max-width: 360px;
+            padding: 20px;
+        }
+
+        /* Круглый пунктирный placeholder для логотипа */
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            border: 2px dashed rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            margin: 0 auto 25px auto;
+        }
+
+        .title-main {
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .title-sub {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #b3b3b3;
+            letter-spacing: 2px;
+            margin-bottom: 35px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .input-field:focus {
+            border-color: #3b82f6;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Стиль плейсхолдеров */
+        .input-field::placeholder {
+            color: #cccccc;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #1d63b8; /* Синий цвет кнопки */
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #158c3d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="logo-placeholder"></div>
+                <div class="title-main">76972 HARBY BÖLÜMI</div>
+        <div class="title-sub">Söweşjen Taýýarlygy</div>
+
+        <form onsubmit="checkLogin(event)">
+            <div class="input-group">
+                <input type="text" id="username" class="input-field" placeholder="USER" required autocomplete="off">
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" class="input-field" placeholder="ADMIN" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Giriş</button>
+        </form>
+    </div>
+
+    <script>
+        function checkLogin(event) {
+            // Отменяем перезагрузку страницы при отправке формы
+            event.preventDefault(); 
+
+            // Получаем значения из полей ввода
+            const userField = document.getElementById('username').value.trim();
+            const passwordField = document.getElementById('password').value.trim();
+
+            // 1. Проверка для Admin (Пароль: 76972)
+            if (passwordField === "76972..2026") {
+                window.location.href = "SANLY ULGAM/ýüzi.html";
+            } 
+            // 2. Проверка для User (Пароль: DBS)
+            else if (passwordField === "00000") {
+                // Здесь сейчас стоит та же страница, но при желании можно поставить другую
+                window.location.href = "1234.html";
+            } 
+            // 3. Если пароль не подошел
+            else {
+                alert("ÝALŇYŞ PAROL TÄZEDEN SYNANŞYP GÖRÜŇ )) .");
+            }
+        }
+    </script>
+
+</body>
+</html>
